@@ -1,3 +1,11 @@
+This fork exists until we have a PR land:
+
+- https://github.com/sorrycc/esbuild-webpack-plugin/pull/28
+
+We're publishing an internal package off of this branch, also leveraging fixes in https://github.com/sorrycc/esbuild-webpack-plugin/pull/27.
+
+---
+
 # esbuild-webpack-plugin
 
 Use [esbuild](https://github.com/evanw/esbuild) as minifier for webpack.
