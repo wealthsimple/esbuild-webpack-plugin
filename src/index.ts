@@ -57,6 +57,12 @@ export default class ESBuildPlugin {
         await ESBuildPlugin.ensureService(true);
         result = await transform();
       } else {
+        const failedSourceFile = 'webpack-esbuild-failed-source.js';
+        require('fs').writeFileSync(failedSourceFile, source);
+        console.log(
+          `writing the contents of the source that failed to minify as: ${failedSourceFile}`,
+        );
+        ESBuildPlugin.service.stop();
         throw e;
       }
     }

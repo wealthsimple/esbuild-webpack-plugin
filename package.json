@@ -1,6 +1,6 @@
 {
   "name": "esbuild-webpack-plugin",
-  "version": "1.2.0-1",
+  "version": "1.2.0-2",
   "description": "Use esbuild as minifier.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,8 +15,7 @@
     "build:example:esbuild": "ESBUILD=1 APP_ROOT=example BABEL_CACHE=none TERSER_CACHE=none umi build",
     "build:example:nocompress": "COMPRESS=none APP_ROOT=example BABEL_CACHE=none TERSER_CACHE=none umi build",
     "build:test": "APP_ROOT=test/fixtures/normal umi build",
-    "test": "umi-test",
-    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish --any-branch"
+    "test": "umi-test"
   },
   "keywords": [],
   "author": "chencheng <sorrycc@gmail.com>",
